@@ -11,8 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <style>
-      * {
+    
+   <style>
+      * { 
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    
   font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -21,76 +43,71 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg " style="background: rgba(46, 110, 228, 0.753) ;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="RyuX2 Rm.png" width="50px" height="50px"class="me-2">RyuX2</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="" href="index.html">หน้าหลัก</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  แบบทดสอบก่อนเรียน
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">บทที่ 1 หลักการสร้างสื่อมัลติมีเดีย</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 2 หลักการออกแบบโครงร่างเรื่องราว ( Story board )</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 3 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Microsoft PowerPoint</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 4 การใส่เสียงและการบันทึกเสียง</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 5 การใส่ภาพเคลื่อนไหวและวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 6 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Adobe Premiere Pro</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 7 การนำภาพมาประกอบเป็นวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 8 การสร้างไตเติ้ลด้วยข้อความ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 9 การใส่เสียงประกอบภาพ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 10 การตัดต่อวิดีโอและการผลิตสื่อมัลติมีเดียในงานอาชีพ</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  บทเรียน
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Ep1.html">บทที่ 1 หลักการสร้างสื่อมัลติมีเดีย</a></li>
-                  <li><a class="dropdown-item" href="Ep2.html">บทที่ 2 หลักการออกแบบโครงร่างเรื่องราว ( Story board )</a></li>
-                  <li><a class="dropdown-item" href="Ep3.html">บทที่ 3 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Microsoft PowerPoint</a></li>
-                  <li><a class="dropdown-item" href="Ep4.html">บทที่ 4 การใส่เสียงและการบันทึกเสียง</a></li>
-                  <li><a class="dropdown-item" href="Ep5.html">บทที่ 5 การใส่ภาพเคลื่อนไหวและวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="Ep6.html">บทที่ 6 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Adobe Premiere Pro</a></li>
-                  <li><a class="dropdown-item" href="Ep7.html">บทที่ 7 การนำภาพมาประกอบเป็นวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="Ep8.html">บทที่ 8 การสร้างไตเติ้ลด้วยข้อความ</a></li>
-                  <li><a class="dropdown-item" href="Ep9.html">บทที่ 9 การใส่เสียงประกอบภาพ</a></li>
-                  <li><a class="dropdown-item" href="Ep10.html">บทที่ 10 การตัดต่อวิดีโอและการผลิตสื่อมัลติมีเดียในงานอาชีพ</a></li>
-                </ul>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  แบบทดสอบหลังเรียน
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">บทที่ 1 หลักการสร้างสื่อมัลติมีเดีย</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 2 หลักการออกแบบโครงร่างเรื่องราว ( Story board )</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 3 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Microsoft PowerPoint</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 4 การใส่เสียงและการบันทึกเสียง</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 5 การใส่ภาพเคลื่อนไหวและวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 6 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Adobe Premiere Pro</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 7 การนำภาพมาประกอบเป็นวิดีโอ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 8 การสร้างไตเติ้ลด้วยข้อความ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 9 การใส่เสียงประกอบภาพ</a></li>
-                  <li><a class="dropdown-item" href="#">บทที่ 10 การตัดต่อวิดีโอและการผลิตสื่อมัลติมีเดียในงานอาชีพ</a></li>
-                </ul>
-              </li>-->
-            </ul> 
-            <div class="">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="RyuX2 Rm.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex flex-row justify-content-between" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="" href="index.html">หน้าหลัก</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                แบบทดสอบก่อนเรียน
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSchmXAbWKu4oTBgN91k1kncXBBsizpjt0X-VoH7HuNq-O-jbQ/viewform?usp=dialog">บทที่ 1 หลักการสร้างสื่อมัลติมีเดีย</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSda2RcCNZCvbkNw29y2Ann110YMDELROUoim88UtDxtSvJbyg/viewform?usp=dialog">บทที่ 2 หลักการออกแบบโครงร่างเรื่องราว ( Story board )</a></li>
+                <li><a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScwqiNNT4cV3-BijXWKD-EkT-WCN8nLnRjVlFXAv6rgPZ8jfA/viewform?usp=dialog">บทที่ 3 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Microsoft PowerPoint</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 4 การใส่เสียงและการบันทึกเสียง</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 5 การใส่ภาพเคลื่อนไหวและวิดีโอ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 6 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Adobe Premiere Pro</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 7 การนำภาพมาประกอบเป็นวิดีโอ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 8 การสร้างไตเติ้ลด้วยข้อความ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 9 การใส่เสียงประกอบภาพ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 10 การตัดต่อวิดีโอและการผลิตสื่อมัลติมีเดียในงานอาชีพ</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="" href="ChAll.html">เนื้อหาบทเรียน</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="" href="HistoryProject.html">คำอธิบายรายวิชา</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="" href="Sensei.html">ครูที่ปรึกษา</a>
+            </li>
+            
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                แบบทดสอบหลังเรียน
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">บทที่ 1 หลักการสร้างสื่อมัลติมีเดีย</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 2 หลักการออกแบบโครงร่างเรื่องราว ( Story board )</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 3 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Microsoft PowerPoint</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 4 การใส่เสียงและการบันทึกเสียง</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 5 การใส่ภาพเคลื่อนไหวและวิดีโอ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 6 การออกแบบ สร้าง แก้ไข ตกแต่งโดยใช้โปรแกรม Adobe Premiere Pro</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 7 การนำภาพมาประกอบเป็นวิดีโอ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 8 การสร้างไตเติ้ลด้วยข้อความ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 9 การใส่เสียงประกอบภาพ</a></li>
+                <li><a class="dropdown-item" href="#">บทที่ 10 การตัดต่อวิดีโอและการผลิตสื่อมัลติมีเดียในงานอาชีพ</a></li>
+              </ul>
+            </li>-->
+          </ul> 
+          <div class="">
+            
+                <a class="btn btn-light me-5" href="HistoryUser.html"><i class="bi bi-person"></i> ประวัติผู้จัดทำ</a>
               
-                  <a class="btn btn-light me-5" href="HistoryUser.html"><i class="bi bi-person"></i> ประวัติผู้จัดทำ</a>
-                
-            </div>
           </div>
         </div>
-    </nav>
+      </div>
+  </nav>
 
 
     <div class="">
@@ -116,7 +133,7 @@
     
       <br>
       <center><h1>ประวัติผู้จัดทำ</h1></center>
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <div class="d-flex justify-content-center flex-row w-100 align-items-center gap-5">
         
             
@@ -158,6 +175,26 @@
           <div>  <a class="btn btn-light " href="https://www.facebook.com/woragornparnruk/"><i class="bi bi-facebook"> Facebook</i></a></div>
           <div>  <a class="btn btn-light " href="https://www.instagram.com/iceq58559/"><i class="bi bi-instagram"> Instagram</i></a></div>
           <div>  <a class="btn btn-light " href="https://line.me/ti/p/h2fRaq5Wrr"><i class="bi bi-line"></i> Line</i></a></div>
+        
+        </div>
+
+        </div>
+      </div>
+
+      <div class="card" style="width: 20rem ">
+        <img src="DR.jpg" class="card-img-top" alt="image.jpg">
+        <div class="card-body">
+          <center><p class="card-text"><i class="bi bi-person"></i> นายจิรายุศ สวัสดี</p></center>
+          <center><p class="card-text">ปวส.1/1 เลขที่3</p></center>
+          <center><p class="card-text"><i class="bi bi-person-vcard"></i> รหัสประจำตัวนักศึกษา 67309010003</p></center>
+          <center><p class="card-text"><i class="bi bi-pc-display"></i> แผนกเทคโนโลยีสารสนเทศ</p></center>
+        <br>
+      
+        <div class="d-flex justify-content-center flex-row w-100 gap-2 flex-wrap">
+              
+          <div>  <a class="btn btn-light " href="https://www.facebook.com/profile.php?id=100085021419388"><i class="bi bi-facebook"> Facebook</i></a></div>
+          <div>  <a class="btn btn-light " href="https://www.instagram.com/dan_js2006/"><i class="bi bi-instagram"> Instagram</i></a></div>
+          <div>  <a class="btn btn-light " href=""><i class="bi bi-line"></i> Line</i></a></div>
         
         </div>
 
